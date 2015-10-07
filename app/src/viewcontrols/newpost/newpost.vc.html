@@ -1,0 +1,10 @@
+<plat-button plat-tap ="createPost()" class="button-primary">Create Post</plat-button>
+<div class="post-container">
+	<div class="post-info">
+	<plat-input type='text' plat-bind='author' placeholder='Author'></plat-input>
+	<plat-input type='text' plat-bind='title' placeholder='Tittle'></plat-input>
+	</div>
+	<div class="post-body">
+	<textarea class="form-control" rows='6' cols='95'placeholder="What's on your mind?" plat-bind="content"></textarea>
+	</div>
+</div>

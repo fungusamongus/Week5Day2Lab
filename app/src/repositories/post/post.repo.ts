@@ -8,6 +8,7 @@ export default class PostRepository extends BaseRepository {
 		super();
 	}
 	
+	
 
 }
 

@@ -17,6 +17,18 @@ getPosts(data?: any): async.IThenable<any> {
         });
 }
 
+newPost(data?: any): async.IThenable<any> {
+        return this.http.json<models.IResponse>({
+            method: 'POST',
+            headers: this.headers,
+            url: this.host,
+            data: data,
+        }).then((success) => {
+            return success.response.results;
+        }, (error) => {
+            throw error.response.message;
+        });
+}
 
 }
 
